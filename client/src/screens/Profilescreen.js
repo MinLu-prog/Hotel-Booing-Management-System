@@ -1,9 +1,14 @@
+
 import React, { useState, useEffect } from "react";
 import Loader from '../components/Loader';
 import Error from '../components/Error';
 import { Tabs } from 'antd';
 import axios from "axios";
+import Swal from 'sweetalert2';
+import { Divider, Tag } from 'antd';
+
 const {TabPane} = Tabs;
+
 
 function Profilescreen() {
     const user = JSON.parse(localStorage.getItem('currentUser'));
@@ -40,7 +45,7 @@ export default Profilescreen;
 
 
 export function MyBookings() {
-    const user = JSON.parse(localStorage.getItem('currentUser'))
+    const user = JSON.parse(localStorage.getItem("currentUser"))
     const[bookings,setbookings] = useState([])
     const [loading, setLoading] = useState(false);
     const [error, setError] = useState();
@@ -48,7 +53,7 @@ export function MyBookings() {
         async function fetchBookings() {
             try {
                 setLoading(true);
-                const data =  await(await axios.post('/api/bookings/getbookingsbyuserid', { userid: user._id })).data;
+                const data =  await(await axios.post("/api/bookings/getbookingsbyuserid", { userid: user._id })).data;
                 console.log(data);
                 setbookings(data);
                 setLoading(false);
@@ -61,6 +66,23 @@ export function MyBookings() {
 
     }, [])
 
+  async  function cancelBooking(bookingid , roomid){
+        try {
+            setLoading(true)
+            const result = await(await axios.post("/api/bookings/cancelbooking",{bookingid,roomid})).data
+            console.log(result);
+            setLoading(false);
+            Swal.fire("Congrats","Your booking has been cancelled","success").then(result =>{
+                window.location.reload();
+            })
+        } catch (error) {
+            console.log(error);
+            Swal.fire("Oops","Something went wrong","Failed")
+            
+        }
+    }
+
+
 
     return (
         <div>
@@ -69,8 +91,24 @@ export function MyBookings() {
                     {loading && (<Loader/>)}
                     {bookings && (bookings.map(booking =>{
 
-                           return  <div>
-                                <h1>{bookings.room}</h1>
+                        return  <div className="bs">
+                                <h1>{booking.room}</h1>
+                                <p><b>BookingId :</b> {booking._id}</p>
+                                <p><b>CheckIn : </b>{booking.fromdate}</p>
+                                <p><b>CheckOut :</b> {booking.todate}</p>
+                                <p><b>Amount :</b> {booking.totalamount}</p>
+                        <p><b>Status</b> :{" "}
+                        {booking.status === 'cancelled' ? (<Tag color="orange">CANCELLED</Tag>) :(      <Tag color="green">CONFIRMED</Tag>)}   
+                        </p>
+                            
+                        {booking.status !== 'cancelled' &&(
+                                 <div className="text-right">
+                                
+                                 <button class="btn btn-primary" onClick={()=>{cancelBooking(booking._id,booking.roomid)}}>CANCEL BOOKING</button>    
+                                 </div>
+                     ) }
+
+
                             </div>
                     }))}
                 </div>

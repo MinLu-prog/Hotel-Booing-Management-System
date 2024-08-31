@@ -16,7 +16,7 @@ function Registerscreen() {
     const [success, setsuccess] = useState()
 
     async function register(){
-     if(password == cpassword)
+     if(password === cpassword)
      {
         const user ={
             name,
