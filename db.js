@@ -1,16 +1,11 @@
 const mongoose = require("mongoose");
 
-var mongoURL = 'mongodb+srv://minlu:allcar@cluster0.ceffd.mongodb.net/HotelBookingSystem';
-mongoose.connect(mongoURL , {useUnifiedTopology : true, useNewUrlParser: true})
+// Use the connection string directly or use environment variables for better security.
+const mongoURL = process.env.MONGO_URI || 'mongodb+srv://minlu:allcar@cluster0.ceffd.mongodb.net/HotelBookingSystem';
 
-var connection = mongoose.connection
+// Connect to MongoDB without deprecated options
+mongoose.connect(mongoURL)
+    .then(() => console.log('MongoDB connected'))
+    .catch((err) => console.error('MongoDB connection error:', err));
 
-connection.on('error', () =>{
-    console.log('Mongo DB Connection failed')
-})
-
-connection.on('connected' , () =>{
-    console.log("Mongo DB Connection Successful")
-} )
-
-module.exports = mongoose
+module.exports = mongoose;
