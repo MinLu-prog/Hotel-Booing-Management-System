@@ -1,50 +1,66 @@
-import React from 'react'
+import React from 'react';
+import { Link } from "react-router-dom";
+import logo from '../assets/logo.png';
 
 function Navbar() {
-    const user = JSON.parse(localStorage.getItem('currentUser'))
-    function logout(){
-        localStorage.removeItem('currentUser')
-        window.location.href="/login"
+    let user = null;
 
+    function logout() {
+        localStorage.removeItem('currentUser');
+        window.location.href = '/login';
     }
+
+    // Safe parsing of 'currentUser' from localStorage
+    try {
+        const userStr = localStorage.getItem('currentUser');
+        if (userStr) {
+            user = JSON.parse(userStr);
+        }
+    } catch (error) {
+        console.error("Failed to parse user from localStorage", error);
+        user = null; // Ensure user is null if parsing fails
+    }
+
     return (
-
-
-
         <div>
-            <nav class="navbar navbar-expand-lg">
-                <a class="navbar-brand" href="/home">BookHotel</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"> <i class="fas fa-bars" style={{color: 'white'}}></i></span>
+            <nav className="navbar navbar-expand-lg">
+                <a className="navbar-brand" href="/"><img src={logo} alt="logo" /></a>
+                
+                <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    {/* Corrected the className to "fa-solid fa-bars" */}
+                    <span className="navbar-toggler-icon"><i className="fas fa-bars" style={{ color: 'white' }}></i></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav me-5">
+                <div className="collapse navbar-collapse" id="navbarNav">
+                    <ul className="navbar-nav me-5">
                         {user ? (
-                            <>
-                                <div class="dropdown">
-                                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                            <div class="dropdown">
+                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                                     <i class="fas fa-user"></i> {user.name}
-                                    </button>
-                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                        <li><a class="dropdown-item" href="/profile">Profile</a></li>
-                                        <li><a class="dropdown-item" href="#" onClick={logout}>Logout</a></li>
-                                        
-                                    </ul>
-                                </div>
-                            </>) : (<>
-                                <li class="nav-item active">
-                                    <a class="nav-link" href="/register">Register</a>
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                    <li><a class="dropdown-item" href="/profile" >Profile</a></li>
+                                    <li><a class="dropdown-item" href="#" onClick={logout}>Logout</a></li>
+
+                                </ul>
+                            </div>
+
+                        ) : (
+                            <>
+                                <li className="nav-item active">
+                                    <a className="nav-link" href="/register">Register</a>
                                 </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="/login">Login</a>
+                                <li className="nav-item">
+                                    <a className="nav-link" href="/login">Login</a>
                                 </li>
                             </>
                         )}
                     </ul>
                 </div>
+
+
             </nav>
         </div>
-    )
+    );
 }
 
-export default Navbar
+export default Navbar;

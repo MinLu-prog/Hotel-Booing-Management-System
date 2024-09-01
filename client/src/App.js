@@ -1,6 +1,7 @@
 //import logo from './logo.svg';
 import './App.css';
 import Navbar from './components/Navbar';
+import Footer from './components/Footer';
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Homescreen from './screens/Homescreen';
 import Bookingscreen from './screens/Bookingscreen';
@@ -10,10 +11,18 @@ import Profilescreen from './screens/Profilescreen';
 import Adminscreen from './screens/Adminscreen';
 import Landingscreen from './screens/Landingscreen';
 
+
 function App() {
+
+
   return (
     <div className="App">
+  
       <Navbar />
+      <br />
+      <br />
+      <br />
+      <br />
       <BrowserRouter>
         <Routes>
       
@@ -27,6 +36,7 @@ function App() {
           <Route path='/' element={<Landingscreen/>}/>
         </Routes>
       </BrowserRouter>
+
     </div>
   );
 }

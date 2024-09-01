@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { useParams } from 'react-router-dom';
@@ -6,6 +7,9 @@ import Error from '../components/Error';
 import moment from 'moment';
 import StripeCheckout from 'react-stripe-checkout'
 import Swal from 'sweetalert2'
+import { Link as ScrollLink, animateScroll as scroll } from "react-scroll"; // Import ScrollLink and scroll
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 function Bookingscreen() {
     const { roomid, fromdate, todate } = useParams();
@@ -26,16 +30,15 @@ function Bookingscreen() {
 
 
     useEffect(() => {
-
-        // if(localStorage.getItem('currentUser')){
-        //     window.location.href='/login'
-        // }
-
         async function fetchRooms() {
+            if (!localStorage.getItem('currentUser')) {
+                window.location.href = '/login'; // Redirect to login page if user is not logged in
+                return; // Exit the function after redirect
+            }
             try {
                 setLoading(true);
                 const data = (await axios.post('/api/rooms/getroombyid', { roomid })).data;
-                settotalamount(data.rentperday * totaldays)
+                settotalamount(data.rentperday * totaldays);
                 setRoom(data);
                 setLoading(false);
             } catch (error) {
@@ -45,13 +48,18 @@ function Bookingscreen() {
             }
         }
         fetchRooms();
-    }, [roomid]);
 
+        AOS.init({
+            duration: 2000,
+            once: true,
+          });
+    }, [roomid]);
+    
     //const totalamount = room ? totaldays * room.rentperday : 0; We can use this only 
 
 
     async function onToken(token) {
-        console.log(token)
+        console.log(token);
         const bookingDetails = {
             room,
             userid: JSON.parse(localStorage.getItem('currentUser'))._id,
@@ -59,26 +67,37 @@ function Bookingscreen() {
             todate,
             totalamount,
             totaldays,
-            token
-
+            token,
         };
+    
         try {
             setLoading(true);
-            const result = await axios.post('/api/bookings/bookroom', bookingDetails).then(result=>{
-                window.location.href ='/bookings'
-            })//link to Navbar.js Booking
+            const result = await axios.post('/api/bookings/bookroom', bookingDetails);
+            const userEmail = JSON.parse(localStorage.getItem('currentUser')).email;
+    
+            // Send the booking confirmation email
+            await axios.post('/api/bookings/sendbookingconfirmation', {
+                email: userEmail,
+                bookingDetails: `
+                    Room: ${room.name}
+                    From date: ${fromdate}
+                    To date: ${todate}
+                    Total amount: ${totalamount}
+                    Total days: ${totaldays}
+                `,
+            });
+    
             setLoading(false);
-            Swal.fire('congratulation', 'Your Room Booked Successfully ', 'success')
+            Swal.fire('Congratulations', 'Your room booked successfully', 'success');
+            window.location.href = '/profile';
         } catch (error) {
-
-            setLoading(false)
-            Swal.fire('Oops ', 'Something went wrong', 'error')
+            setLoading(false);
+            Swal.fire('Oops', 'Something went wrong', 'error');
         }
-
     }
 
     return (
-        <div className='m-5'>
+        <div className='m-5' data-aos ="fade-down">
             {loading ? (
                 <Loader />
             ) : room ? (
@@ -109,12 +128,15 @@ function Bookingscreen() {
                                 </b>
                             </div>
                             <div style={{ float: 'right' }}>
-                            <StripeCheckout
+
+
+
+                                <StripeCheckout
                                     amount={totalamount * 100}
                                     token={onToken}
                                     currency='MMK'
-                                    stripeKey="pk_test_51Ps6A1H6f7IOyMyVX9EpCuFpmboLu5u9MvxzBtuvLZwZD9mW5z0kqZGyryttbhrjQNvpXpJIGV4tt4caIKXQEQgK002w0g0pn1"
-                             >
+                                    stripeKey='pk_test_51PsBLbGCjrxZWa3d8Qo3hD62Upk4Svrf7dMT8LfaBSohNXzChVSrdZUvaCNpiX4qJdGivMHYx4sUOvSTp9W25cDc00Z6fhOy8y'
+                                >
 
                                     <button className='btn btn-primary' >Pay Now</button>
 
@@ -132,7 +154,6 @@ function Bookingscreen() {
 }
 
 export default Bookingscreen;
-                            
 
 // import React, { useState, useEffect } from 'react';
 // import axios from 'axios';
