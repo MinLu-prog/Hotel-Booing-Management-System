@@ -1,0 +1,355 @@
+[
+
+ {
+        "name": "MALIKHA 101 Comfort Single ",
+        "imageurls": [
+            "https://images.oyoroomscdn.com/uploads/hotel_image/114083/large/2de8ad45416edd5c.jpg",
+            "https://images.oyoroomscdn.com/uploads/hotel_image/114083/large/76dcf10242ce4085.jpg",
+            "https://images.oyoroomscdn.com/uploads/hotel_image/114083/large/c47004764593075f.jpg"
+        ],
+        "rentperday": 30000,
+        "type": "Single Bed",
+        "maxcount": 1,
+        "phonenumber": 9989649278,
+        "currentbookings": [],
+        "description": "MALIKHA 101 Comfort Single is a budget room with standardised amenities at the best value. A stay includes CCTV Cameras, Parking Facility, and Elevator."
+    },
+    {
+        "name": "MALIKHA 102 Cozy Single",
+        "imageurls": [
+            "https://cf.bstatic.com/xdata/images/hotel/max1024x768/207336643.jpg?k=f5e6bde4ebbf461f3d9dca7ea6a45e0d5edb1c7173f9d0a78e7fb40432697620&o=&hp=1",
+            "https://cf.bstatic.com/xdata/images/hotel/max1024x768/207342028.jpg?k=ebce4dd0526a89ca4ab98150d8f2b2d816887281c75460623b6c24bd37038635&o=&hp=1",
+            "https://cf.bstatic.com/xdata/images/hotel/max1024x768/207342032.jpg?k=dfa9ed306a6674808b1a13931f96235a5d349d6c778dab62533d7e983b9e39f4&o=&hp=1"
+        ],
+        "rentperday": 25000,
+        "type": "Single Bed",
+        "maxcount": 1,
+        "phonenumber": 9989649278,
+        "currentbookings": [],
+        "description": "The Cozy Single room is a comfortable and compact space, perfect for solo travelers. With a plush single bed, modern amenities, and a warm ambiance, this room offers a cozy retreat for a restful stay."
+    },
+    {
+        "name": "MALIKHA 103 Relax Single",
+        "imageurls": [
+            "https://www.hyggehotel.be/wp-content/gallery/relaxrooms/1-RELAX-DOUBLE.jpg",
+            "https://www.hyggehotel.be/wp-content/gallery/relaxrooms/2-relax-double-8.jpg",
+            "https://www.hyggehotel.be/wp-content/gallery/gallery/cozy4.jpg"
+        ],
+        "rentperday": 32000,
+        "type": "Single Bed",
+        "maxcount": 1,
+        "phonenumber": 9989649278,
+        "currentbookings": [],
+        "description": "The Relax Single room is a serene and peaceful space, perfect for solo travelers seeking comfort and tranquility. With soft colors, a plush single bed, and modern amenities, this room offers a relaxing retreat."
+    },
+    {
+        "name": "MALIKHA 104 Bliss Single",
+        "imageurls": [
+            "https://sintrablisshotel.com/wp-content/uploads/2015/10/QuartoSingle1-1400x933.jpg",
+            "https://sintrablisshotel.com/wp-content/uploads/2015/10/QuartoSingle3-1400x933.jpg",
+            "https://sintrablisshotel.com/wp-content/uploads/2015/10/QuartoSingle4-1400x933.jpg"
+        ],
+        "rentperday": 28000,
+        "type": "Single Bed",
+        "maxcount": 1,
+        "phonenumber": 9989649278,
+        "currentbookings": [],
+        "description": "Experience comfort in our Bliss Single room, designed with solo travelers in mind. Featuring a cozy single bed and a calming color palette, this room provides a peaceful space for a restful stay."
+    },
+    {
+        "name": "MALIKHA 105 Harmony Single",
+        "imageurls": [
+            "https://cf.bstatic.com/xdata/images/hotel/max1024x768/592980471.jpg?k=9431a6fbb612f3275083e01a1baeda0a6ea1c01184bc13a9c95413d559cd7952&o=&hp=1",
+            "https://cf.bstatic.com/xdata/images/hotel/max1024x768/592980462.jpg?k=5221d6fa66060ca67258a3d92881a9fbae9ede0d1cb698cd2fbb03b3e56f8d7d&o=&hp=1",
+            "https://cf.bstatic.com/xdata/images/hotel/max1024x768/592980473.jpg?k=0529d90092a47acc16a5f33f579cc9c0032439dbf798b1f4ba9796245bdba675&o=&hp=1"
+        ],
+        "rentperday": 25000,
+        "type": "Single Bed",
+        "maxcount": 1,
+        "phonenumber": 9989649278,
+        "currentbookings": [],
+        "description": "The Harmony Single room offers a blend of comfort and style, featuring a comfortable single bed and modern amenities. This room is perfect for solo travelers seeking a quiet and relaxing space for their stay."
+    },
+ {
+        "name": "MALIKHA 201 Jasmine",
+        "imageurls": [
+            "https://cf.bstatic.com/xdata/images/hotel/max1024x768/219192499.webp?k=64c98e035e697a9b5f28de48542f77b375d8303d28bbbd3715cb6e860344385f&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max1024x768/219192417.webp?k=19e536bea35678ad6dba7908d6cb5fa3167f539525313a9e414977a40edb857e&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max1024x768/387372002.webp?k=35d344d85d615af9988a611899d3e55b49acb17e87f192892b4256b5463885aa&o="
+        ],
+        "rentperday": 35000,
+        "type": "Double Bed",
+        "maxcount": 2,
+        "phonenumber": 9989649278,
+        "currentbookings": [],
+        "description": "Embrace simplicity and elegance in our Jasmine room, designed with cozy comfort in mind. This room offers a serene ambiance with soft hues and delicate jasmine-scented amenities, perfect for a relaxing stay."
+    },
+    {
+        "name": "MALIKHA 202 Lotus",
+        "imageurls": [
+            "https://cf.bstatic.com/xdata/images/hotel/max1024x768/592288053.webp?k=1d55fa19217834225d4277e2efee63225be7d981ff08523e0ec63ecaf00d968e&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max1024x768/215147262.webp?k=608059ebb24396c694360d88a453e79adebf3c3aeb1246d67e7d1411652b20b4&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max1024x768/454626763.webp?k=ab05f7521d8029bf9d65d64f3dc0d216a15f98a6b064c366344d6c41a1cb8c27&o="
+        ],
+        "rentperday": 50000,
+        "type": "Double Bed",
+        "maxcount": 2,
+        "phonenumber": 9989649278,
+        "currentbookings": [],
+        "description": "Discover tranquility in our Lotus room, inspired by the purity and calmness of the lotus flower. A peaceful retreat with a minimalist design, this room is an oasis of comfort with all the essential amenities you need."
+    },
+    {
+        "name": "MALIKHA 203 Bamboo",
+        "imageurls": [
+            "https://cf.bstatic.com/xdata/images/hotel/max1024x768/552201169.jpg?k=c9b664453f407979fe0e3e204ee7a6aca2d68c6da54f45a56f529dc5a98cec5b&o=&hp=1",
+            "https://cf.bstatic.com/xdata/images/hotel/max1024x768/552201176.jpg?k=9f5926e8403c341648f5c5b5831765303b27bfe9916eed8c2bdf6136cc3baa16&o=&hp=1",
+            "https://cf.bstatic.com/xdata/images/hotel/max1024x768/552200984.jpg?k=a14bbf39721711af5c927ec46e6582d981240816f79cb742e9da4802487c5557&o=&hp=1"
+        ],
+        "rentperday": 75000,
+        "type": "Double Bed",
+        "maxcount": 5,
+        "phonenumber": 9989649278,
+        "currentbookings": [],
+        "description": "Step into our Bamboo room, where nature meets relaxation. Featuring bamboo accents and green tones, this room provides a refreshing and rejuvenating environment, ideal for unwinding after a day of exploration."
+    },
+    {
+        "name": "MALIKHA 204 Orchid",
+        "imageurls": [
+            "https://image-tc.galaxy.tf/wijpeg-crh8rez1j5380jr78clkjy9fm/deluxe-double-partial-oceanview-lr_standard.jpg?crop=72%2C0%2C1152%2C864&width=800",
+            "https://www.hilton.com/im/en/FLLDHQQ/2571892/the-diplomat-resort-superior-oceanview-double.jpg?impolicy=crop&cw=5000&ch=2992&gravity=NorthWest&xposition=0&yposition=112&rw=528&rh=316",
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1QbHHU2YChbvnulPv1T0qyZ4zDLuvJX2j85ObYHmlTuOGACXA_6tX4-evIsu5L71kr6Y&usqp=CAU"
+        ],
+        "rentperday": 45000,
+        "type": "Double Bed",
+        "maxcount": 2,
+        "phonenumber": 9989649278,
+        "currentbookings": [],
+        "description": "The Orchid room exudes charm and elegance with its plush bedding and luxurious fabrics. Perfect for those who appreciate the finer things in life, this room offers a soothing retreat with orchid-scented touches."
+    },
+    {
+        "name": "MALIKHA 205 Magnolia",
+        "imageurls": [
+            "https://cf.bstatic.com/xdata/images/hotel/max1024x768/133783278.webp?k=028aa1f4baf2dfef6c1e2bfe498a9c40f19d4849489f069499699eab1b13b169&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max1024x768/133783302.webp?k=4a5d5b3c4c8486548c13f4dd9510e0b3e99659a903e8a4d247d6a79c1639d32f&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max1024x768/133783264.webp?k=53c6016717df900b0953ed49411c11e861c723b4711b2344a2a9f3523b7ef3a0&o="
+        ],
+        "rentperday": 40000,
+        "type": "Double Bed",
+        "maxcount": 2,
+        "phonenumber": 9989649278,
+        "currentbookings": [],
+        "description": "Our Magnolia room is a haven of comfort, decorated with soft colors and classic décor. The room features magnolia-scented amenities, creating a calming atmosphere for a peaceful night's rest."
+    },
+    {
+        "name": "MALIKHA 301 Horizon Deluxe",
+        "imageurls": [
+            "https://www.hotelmandalaymm.com/wp-content/uploads/2019/10/superior1_2019.jpg",
+            "https://www.hotelmandalaymm.com/wp-content/uploads/2019/10/superior2_2019.jpg",
+            "https://www.hotelmandalaymm.com/wp-content/uploads/2019/10/Superior4_2019.jpg"
+        ],
+        "rentperday": 80000,
+        "type": "Deluxe",
+        "maxcount": 2,
+        "phonenumber": 9876543211,
+        "currentbookings": [],
+        "description": "Enjoy breathtaking views from our Horizon Deluxe room, where the sky meets luxury. With a spacious layout and modern furnishings, this room offers a perfect blend of comfort and style, making it ideal for both relaxation and productivity."
+    },
+ {
+        "name": "MALIKHA 302 Emerald Deluxe",
+        "imageurls": [
+            "https://cf.bstatic.com/xdata/images/hotel/max1024x768/506272036.jpg?k=409b070ae0c4147bc5807d1a11f8d813141e71337be07a114b984f5add7e59a6&o=&hp=1",
+            "https://cf.bstatic.com/xdata/images/hotel/max1024x768/506272888.jpg?k=2580fa7b7e6ca2b3d7483e204c854e082c5e66ef611780ea6810ce19a1ee5d24&o=&hp=1",
+            "https://cf.bstatic.com/xdata/images/hotel/max1024x768/505517318.jpg?k=0cf701da80c96cd801358ec5d8270167781912d4c4d439ac3d7f9889091b9944&o=&hp=1"
+        ],
+        "rentperday": 100000,
+        "type": "Deluxe",
+        "maxcount": 2,
+        "phonenumber": 9876543211,
+        "currentbookings": [],
+        "description": "Experience elegance in our Emerald Deluxe room, where luxury meets comfort. Adorned with rich green tones and opulent fabrics, this room offers a sophisticated ambiance for a truly memorable stay."
+    },
+    {
+        "name": "MALIKHA 303 Tranquil Deluxe",
+        "imageurls": [
+            "https://cf.bstatic.com/xdata/images/hotel/max1024x768/504055006.jpg?k=378fa4c3f621e6df152eac65f0a108a0faa9ac00b5d439e410f961bc71405e6b&o=&hp=1",
+            "https://cf.bstatic.com/xdata/images/hotel/max1024x768/504055016.jpg?k=2fbb6af2426e86909c301c96a39a13769958671e679022a2f258919dc2312916&o=&hp=1",
+            "https://cf.bstatic.com/xdata/images/hotel/max1024x768/506272855.jpg?k=caec9f968b5e9efac4b2acb9e4f5e8221a87ba1c171b625cf10a46625cc38c50&o=&hp=1"
+        ],
+        "rentperday": 100000,
+        "type": "Deluxe",
+        "maxcount": 3,
+        "phonenumber": 9989649278,
+        "currentbookings": [],
+        "description": "The Tranquil Deluxe room is your sanctuary of peace and calm. Designed with soothing colors and soft lighting, this room provides a quiet escape from the hustle and bustle, allowing you to recharge in serene surroundings."
+    },
+    {
+        "name": "MALIKHA 304 Sunset Deluxe",
+        "imageurls": [
+            "https://cf.bstatic.com/xdata/images/hotel/max1024x768/263656332.jpg?k=0bb7517049566f72b86b7638927d9048fda5154d37c00b5b253dd366c472ac22&o=&hp=1",
+            "https://cf.bstatic.com/xdata/images/hotel/max1024x768/263656325.jpg?k=d815d90f3b1d2048ec00aacfbeef1e70ef85556a44df570d8d60c7cfc335560c&o=&hp=1",
+            "https://cf.bstatic.com/xdata/images/hotel/max1024x768/175020736.jpg?k=ac7c8338b4209a5b8e5107e0e3de9d2679e2cfb444dd2be8c50f15743a78cf8e&o=&hp=1"
+        ],
+        "rentperday": 100000,
+        "type": "Deluxe",
+        "maxcount": 7,
+        "phonenumber": 9989649278,
+        "currentbookings": [],
+        "description": "Bask in the warm glow of our Sunset Deluxe room, designed to capture the beauty of a setting sun. This room features vibrant colors and rich textures, offering a cozy and inviting space to relax and unwind."
+    },
+    {
+        "name": "MALIKHA 305 Sapphire Deluxe ",
+        "imageurls": [
+            "https://cf.bstatic.com/xdata/images/hotel/max1024x768/263656482.jpg?k=00813acf7a088595d62df5e9ca90eba59526900b74c6fa71faac8bd207e2e7d0&o=&hp=1",
+            "https://cf.bstatic.com/xdata/images/hotel/max1024x768/175025678.jpg?k=65c197f55516694bbb5a70bfa0adb77231c4d34172c772654ec37c97094f79c2&o=&hp=1",
+            "https://cf.bstatic.com/xdata/images/hotel/max1024x768/175025672.jpg?k=fe37b7460eedb66c6317026b3fe8a6de40d6a08446d4ec00b2d7a106773c38ca&o=&hp=1"
+        ],
+        "rentperday": 90000,
+        "type": "Deluxe",
+        "maxcount": 3,
+        "phonenumber": 9989649278,
+        "currentbookings": [],
+        "description": "Step into our Sapphire Deluxe room, a space of luxury and refinement. With deep blue hues and stylish décor, this room is a perfect blend of comfort and elegance, offering a serene retreat for our discerning guests."
+    },
+    {
+        "name": "MALIKHA 401 Royal Premium",
+        "imageurls": [
+            "https://www.hotelmandalaymm.com/wp-content/uploads/2019/10/deluxe1_2019.jpg",
+            "https://www.hotelmandalaymm.com/wp-content/uploads/2019/10/deluxe3_2019.jpg",
+            "https://www.hotelmandalaymm.com/wp-content/uploads/2019/10/deluxe5_2019.jpg"
+        ],
+        "rentperday": 70000,
+        "type": "Premium",
+        "maxcount": 2,
+        "phonenumber": 9988776655,
+        "currentbookings": [],
+        "description": "Indulge in the opulence of our Royal Premium room, where luxury meets comfort. With elegant furnishings, rich fabrics, and a spacious layout, this room is designed to provide a regal experience for our esteemed guests."
+    },
+   
+    {
+        "name": "MALIKHA 402 Majestic Premium",
+        "imageurls": [
+            "https://royalmhotels.com/abudhabi/uploads/rooms_types/gallery/1170x780/Room-Premium-min.jpg",
+            "https://royalmhotels.com/abudhabi/uploads/rooms_types/gallery/1170x780/Room-Premium-1-min1.jpg",
+            "https://royalmhotels.com/abudhabi/uploads/rooms_types/gallery/1170x780/Bathroom-min.jpg"
+        ],
+        "rentperday": 100000,
+        "type": "Premium",
+        "maxcount": 2,
+        "phonenumber": 9988776655,
+        "currentbookings": [],
+        "description": "The Majestic Premium room offers a sophisticated and luxurious experience, featuring exquisite décor and modern amenities. This room is perfect for those seeking a blend of elegance and comfort, providing a truly memorable stay."
+    },
+    {
+        "name": "MALIKHA 403 Regency Premium",
+        "imageurls": [
+            "https://royalmhotels.com/abudhabi/uploads/rooms_types/gallery/1170x780/premium.jpg",
+            "https://royalmhotels.com/abudhabi/uploads/rooms_types/image/595x330/royal_m_suite_main.jpg",
+            "https://royalmhotels.com/abudhabi/uploads/rooms_types/gallery/1170x780/Bathroom-min.jpg"
+        ],
+        "rentperday": 120000,
+        "type": "Premium",
+        "maxcount": 3,
+        "phonenumber": 9989649278,
+        "currentbookings": [],
+        "description": "Our Regency Premium room is a blend of classic elegance and modern comfort, featuring sophisticated décor and top-notch amenities. This room provides a luxurious space for relaxation, making it ideal for both business and leisure travelers."
+    },
+    {
+        "name": "MALIKHA 404 Imperial Premium",
+        "imageurls": [
+            "https://cf.bstatic.com/xdata/images/hotel/max1024x768/48933146.jpg?k=e2ff576bffd55a8fb26e2f44fd41e1b2bd37e82fd7418d677208e81437dd2bd6&o=&hp=1",
+            "https://cf.bstatic.com/xdata/images/hotel/max1024x768/48933106.jpg?k=f16b29ba7ac1cb7e097b937ad7b88d23b02edfa7d931a90282ab50b27a25de27&o=&hp=1",
+            "https://cf.bstatic.com/xdata/images/hotel/max1024x768/232251109.jpg?k=7d3750445e14748121f6962dc143f1b0e67e087b95419e448ee8425e1ed9ce35&o=&hp=1"
+        ],
+        "rentperday": 150000,
+        "type": "Premium",
+        "maxcount": 3,
+        "phonenumber": 9988776655,
+        "currentbookings": [],
+        "description": "Step into our Imperial Premium room, a space of grandeur and refinement. With plush bedding, luxurious fabrics, and a spacious layout, this room offers the ultimate in comfort and style for a truly regal experience."
+    },
+    {
+        "name": "MALIJKHA 405 Monarch Premium",
+        "imageurls": [
+            "https://cf.bstatic.com/xdata/images/hotel/max1024x768/547303950.jpg?k=e81d3bee67b3a2dbe619e2d085dd576409b3c0a10a45dc637a044873a10b3e72&o=&hp=1",
+            "https://cf.bstatic.com/xdata/images/hotel/max1024x768/547303968.jpg?k=185d990aab3dc5e724993f099e43f32c4210d7c4bd1b53cd7f33e005c916ec21&o=&hp=1",
+            "https://cf.bstatic.com/xdata/images/hotel/max1024x768/547303986.jpg?k=c9882a60361658881e978156d825e9c67aebf0a95d2125b7ecbae34c881fcf07&o=&hp=1"
+        ],
+        "rentperday": 180000,
+        "type": "Premium",
+        "maxcount": 5,
+        "phonenumber": 9989649278,
+        "currentbookings": [],
+        "description": "Experience the height of luxury in our Monarch Premium room, designed with opulent furnishings and a spacious layout. This room offers a regal retreat, perfect for those seeking the ultimate in comfort and style."
+    },
+    {
+        "name": "MALIKHA 501 Grand Suite",
+        "imageurls": [
+            "https://www.hotelmandalaymm.com/wp-content/uploads/2019/10/royal_orchid_2019.jpg",
+            "https://www.hotelmandalaymm.com/wp-content/uploads/2019/10/royal_orchid2_2019.jpg",
+            "https://www.hotelmandalaymm.com/wp-content/uploads/2019/10/royal_orchid4_2019.jpg"
+        ],
+        "rentperday": 180000,
+        "type": "Suite",
+        "maxcount": 5,
+        "phonenumber": 9989649278,
+        "currentbookings": [],
+        "description": "The Grand Suite is the epitome of luxury and sophistication, offering a spacious living area and a separate bedroom. With elegant décor, luxurious amenities, and stunning views, this suite is perfect for those seeking the ultimate in comfort and style."
+    },
+    {
+        "name": "MALIKHA 502 Executive Suite",
+        "imageurls": [
+            "https://www.hotelmandalaymm.com/wp-content/uploads/2019/10/royal_orchid1_2019.jpg",
+            "https://www.hotelmandalaymm.com/wp-content/uploads/2019/10/royal_orchid3_2019.jpg",
+            "https://www.hotelmandalaymm.com/wp-content/uploads/2019/10/royal_orchid4_2019.jpg"
+        ],
+        "rentperday": 150000,
+        "type": "Suite",
+        "maxcount": 5,
+        "phonenumber": 9876543210,
+        "currentbookings": [],
+        "description": "Our Executive Suite offers a perfect blend of luxury and functionality, featuring a spacious living area, a comfortable bedroom, and a dedicated workspace. This suite is ideal for business travelers seeking comfort and convenience."
+    },
+    {
+        "name": "MALIKHA 503 Presidential Suite",
+        "imageurls": [
+            "https://cf.bstatic.com/xdata/images/hotel/max1024x768/438330837.webp?k=78ad7923c9393f0b3130f6717f0f9a6a8b5d06eb331cf03e84ed530cea6ae7bd&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max1024x768/438330847.webp?k=0aff4312739820d8ab7020c57a73ee51bed900f821cd9197ff378dc8d2291cab&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max1024x768/228907755.webp?k=0eedc8190d908e9a32b61ed2e1ccb59053329dd013b23dd333d929465b280969&o="
+        ],
+        "rentperday": 200000,
+        "type": "Suite",
+        "maxcount": 2,
+        "phonenumber": 9876543211,
+        "currentbookings": [],
+        "description": "Experience the pinnacle of luxury in our Presidential Suite, a spacious and opulent retreat. With exquisite furnishings, a separate living area, and stunning views, this suite offers the ultimate in comfort and style for our most discerning guests."
+    },
+    {
+        "name": "MALIKHA 504 Garden Suite",
+        "imageurls": [
+            "https://cf.bstatic.com/xdata/images/hotel/max1024x768/76486590.jpg?k=b8180249175f30e064119865746dfe1eb87984f0fd9fb058c45c04bdabd58847&o=&hp=1",
+            "https://cf.bstatic.com/xdata/images/hotel/max1024x768/78236911.jpg?k=48a3136e7d0772877d203cf4af551f7e4be47316c6f6f56a656ad2c4e68e81c7&o=&hp=1",
+            "https://cf.bstatic.com/xdata/images/hotel/max1024x768/126076561.jpg?k=59ae037ffb719e6dc10c22a94864a7a5cfedc1d3adee737ce2bfa813f44ac2b9&o=&hp=1"
+        ],
+
+        "rentperday": 250000,
+        "type": "Suite",
+        "maxcount": 5,
+        "phonenumber": 9876543211,
+        "currentbookings": [],
+        "description": "The Garden Suite is a tranquil oasis, surrounded by lush greenery and beautiful gardens. With a spacious layout, elegant décor, and a private balcony, this suite provides a perfect retreat for relaxation and rejuvenation."
+    },
+    {
+        "name": "MALIKHA 505 Oceanview Suite",
+        "imageurls": [
+            "https://cf.bstatic.com/xdata/images/hotel/max1024x768/582450576.jpg?k=9dd9ac84bb1f2ab970448f6a43b10b1a0a07f070fcc98e0c4391d60d718a80f4&o=&hp=1",
+            "https://cf.bstatic.com/xdata/images/hotel/max1024x768/571546618.jpg?k=8aef481b82962d91417b1aaa2299ef94844b5d21298a7bba786c53d4486dc628&o=&hp=1",
+            "https://cf.bstatic.com/xdata/images/hotel/max1024x768/571546471.jpg?k=7f7a6d76af0307b47a68da133a6af33eb8e9164b86db82c0e667d85c087e7a05&o=&hp=1"
+        ],
+        "rentperday": 250000,
+        "type": "Suite",
+        "maxcount": 7,
+        "phonenumber": 9876543211,
+        "currentbookings": [],
+        "description": "Enjoy breathtaking views of the ocean from our Oceanview Suite, a spacious and luxurious retreat. Featuring a stylish living area, a plush bedroom, and modern amenities, this suite offers a serene escape for our guests."
+    }
+]
