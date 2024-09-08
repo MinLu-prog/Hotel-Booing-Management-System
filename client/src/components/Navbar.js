@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from "react-router-dom";
 import logo from '../assets/logo.png';
 
 function Navbar() {
@@ -39,8 +38,8 @@ function Navbar() {
                                 </button>
                                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
                                     <li><a class="dropdown-item" href="/profile" >Profile</a></li>
-                                    <li><a class="dropdown-item" href="#" onClick={logout}>Logout</a></li>
-
+                                    <li><a class="dropdown-item" href="/register" onClick={logout}>Logout</a></li>
+                                    <li><a class="dropdown-item" href="/contactUs">Contact Us</a></li>
                                 </ul>
                             </div>
 

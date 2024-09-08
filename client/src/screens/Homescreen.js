@@ -124,10 +124,11 @@ function Homescreen() {
       <div className='col-md-3'>
       <select className='form-control' value={type} onChange={(e)=>{filterByType(e.target.value)}}>
         <option value="all">All</option>
-        <option value="delux">Delux</option>
+        <option value="single bed">Single Bed</option>
+        <option value="double bed">Double Bed</option>
+        <option value="deluxe">Deluxe</option>
         <option value="premium">Premium</option>
-        <option value="suite">Suite</option> 
-        <option value="standard">Standard</option>
+        <option value="suite">Suite</option>
 
       </select>
 
@@ -137,7 +138,7 @@ function Homescreen() {
      
 
 
-      <div className="row justify-content-center mt-5" data-aos="flip-left">
+      <div className="row justify-content-center mt-5" data-aos="fade-left">
         {loading ? (
           <Loader />
         ) :(
