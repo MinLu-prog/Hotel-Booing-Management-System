@@ -23,5 +23,10 @@
   },
   "devDependencies": {
     "@types/nodemailer": "^6.4.15"
-  }
+  },
+  "scripts": {
+  "build": "react-scripts build",
+  "start": "react-scripts start"
+}
+
 }

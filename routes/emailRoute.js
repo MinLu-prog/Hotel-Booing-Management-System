@@ -20,12 +20,12 @@ router.post('/sendbookingconfirmation', async (req, res) => {
 
     const mailOptions = {
         from: {
-            name: 'Min Lu',
+            name: 'Malika Hotel',
             address: process.env.USER, 
         },
         to: email,
         subject: "Booking Confirmation",
-        text: `Your booking details: ${bookingDetails}.Have a nice day !`,
+        text: `Your booking details: ${bookingDetails}\nမလိခကိုရွေးချယ်သည့်အတွက်အထူးပင်ကျေးဇူးတင်ရှိပါသည်။ `,
     };
 
     try {
@@ -37,5 +37,7 @@ router.post('/sendbookingconfirmation', async (req, res) => {
         res.status(500).send('Error sending email');
     }
 });
+
+
 
 module.exports = router;

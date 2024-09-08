@@ -9,7 +9,7 @@ const emailRoute = require('./routes/emailRoute')
 const bookingsRoute = require('./routes/bookingsRoute')
 app.use(express.json())
 app.use('/api/users' , usersRoute)
-app.use('/api/rooms', roomsRoute) //roomsjson yeh api
+app.use('/api/rooms', roomsRoute) //
 app.use('/api/bookings', bookingsRoute)
 app.use('/api/bookings',emailRoute)
 

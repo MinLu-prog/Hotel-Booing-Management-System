@@ -1,24 +1,24 @@
 
-import React, { useEffect, useState } from "react";
-import { Link as RouterLink } from "react-router-dom";
+import React, { useEffect, useState  } from "react";
+import { Link as RouterLink, useNavigate } from "react-router-dom";
 import { Link as ScrollLink, animateScroll as scroll } from "react-scroll"; // Import ScrollLink and scroll
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { FaFacebook, FaTwitter, FaInstagram, FaYoutube } from 'react-icons/fa';
 import logo from '../assets/logo.png';
 import aboutImage from '../assets/about.jpg';
-import room1 from '../assets/room-1.jpg';
-import room2 from '../assets/room-2.jpg';
-import room3 from '../assets/room-3.jpg';
 import facebookIcon from '../assets/facebook.png';
 import instagramIcon from '../assets/instagram.png';
 import youtubeIcon from '../assets/youtube.png';
 import twitterIcon from '../assets/twitter.png';
+import FacilitiesScreen from "./Facilitiesscreen";
 
 
 function Landingscreen() {
   const [isReadMore, setIsReadMore] = useState(false);
-
+  const navigate = useNavigate();
+  const handleButtonClick = () => {
+    navigate('/facilities'); // Assuming '/facilities' is the route for FacilitiesScreen
+};
   const readMore = () => {
     setIsReadMore(!isReadMore);
   };
@@ -35,41 +35,45 @@ function Landingscreen() {
       {/* Header */}
       <header className="header" id="home" data-aos="fade-down">
         <div className="section__container header__container">
-          <h2 style={{ color: 'black', fontSize: '100px' }}><b> 'မလိခ' </b> ဧည့်ရိပ်သာ</h2>
+          <h2 style={{ color: 'black', fontSize: '85px' }}><b> 'မလိခ' </b> ဧည့်ရိပ်သာ</h2>
           <h3>Simple - Unique - Friendly</h3>
           <h1>Make Yourself At Home<br />In Our <span>Hotel</span>.</h1>
           <RouterLink to='/home'>
-            <button className="btn landingbtn" style={{ color: 'white' }}>Get Start</button>
+            <button className="btn landingbtn" style={{ color: 'white' }}>Get Started</button>
           </RouterLink>
         </div>
       </header>
 
       <hr />
 
-      {/* Service Section */}
-      <section className="service" id="service" data-aos="fade-up">
+          <section className="service" id="service" data-aos="fade-up">
         <div className="section__container service__container">
           <div className="service__content">
-            <p className="section__subheader">SERVICES</p>
+            <p className="section__subheader">Facilities</p>
             <h2 className="section__header">Strive Only For The Best.</h2>
             <ul className="service__list">
               <li>
                 <span><i className="ri-shield-star-line"></i></span>
-                High Class Security
+                Business Facilities
               </li>
               <li>
                 <span><i className="ri-24-hours-line"></i></span>
-                24 Hours Room Service
+                Guest Facilities
               </li>
               <li>
                 <span><i className="ri-headphone-line"></i></span>
-                Conference Room
+                Beauty and Health Facilities
               </li>
               <li>
-                <span><i className="ri-map-2-line"></i></span>
-                Tourist Guide Support
+                <span><i  className="ri-map-2-line"></i></span>
+                Recreational Facilities
               </li>
             </ul>
+            <div className="text-right">
+            <button className="btn" onClick={handleButtonClick}>
+            See more
+            </button>
+          </div>
           </div>
         </div>
       </section>
@@ -110,12 +114,15 @@ function Landingscreen() {
             <div className="logo">
               <RouterLink to="/home"><img src={logo} alt="logo" /></RouterLink>
             </div>
+            <br/>
             <p className="section__description">
               Discover a world of comfort, luxury, and adventure as you explore our curated selection of hotels, making every moment of your getaway truly extraordinary.
             </p>
             <RouterLink to="/home"><button className="btn">Book Now</button></RouterLink>
           </div>
+          
           <div className="footer__col">
+            <br/>
             <h4>QUICK LINKS</h4>
             <ul className="footer__links">
               <li><ScrollLink to="home" smooth={true} duration={500}>Home</ScrollLink></li>
@@ -125,18 +132,30 @@ function Landingscreen() {
             </ul>
           </div>
           <div className="footer__col">
+          <br/>
             <h4>OUR SERVICES</h4>
             <ul className="footer__links">
-              <li><RouterLink to="#">Concierge Assistance</RouterLink></li>
-              <li><RouterLink to="#">Flexible Booking Options</RouterLink></li>
-              <li><RouterLink to="#">Airport Transfers</RouterLink></li>
-              <li><RouterLink to="#">Wellness & Recreation</RouterLink></li>
+            <li>
+                High Class Security
+              </li>
+              <li>
+
+                24 Hours Room Service
+              </li>
+              <li>
+
+                Conference Room
+              </li>
+              <li>
+                Tourist Guide Support
+              </li>
             </ul>
           </div>
           <div className="footer__col">
+          <br/>
             <h4>CONTACT US</h4>
             <ul className="footer__links">
-              <li><RouterLink to="#">rayalpark@info.com</RouterLink></li>
+              <li><RouterLink to="hotelmalikha@gmail.com">hotelmalikha@gmail.com</RouterLink></li>
             </ul>
             <div className="footer__socials">
               <RouterLink to="#"><img src={facebookIcon} alt="facebook" /></RouterLink>

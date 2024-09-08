@@ -11,7 +11,6 @@ function Adminscreen() {
     useEffect(() => {
         if (!JSON.parse(localStorage.getItem('currentUser')).isAdmin) {
             window.location.href = '/home'
-
         }
     }
 
@@ -244,88 +243,136 @@ export function Users() {
 
 //add room component
 
-export function Addroom(){
-    const [loading, setLoading] = useState(true);
-    const [error, setError] = useState();
-    const[name , setname]=useState(false)
-    const[rentperday, setrentperday]=useState()
-    const[maxcount, setmaxcount] = useState()
-    const[description, setdescription] =useState()
-    const[phonenumber,setphonenumber] =useState()
-    const[type,settype]=useState()
-    const[imageurl1, setimageurl1]=useState()
-    const[imageurl2, setimageurl2]=useState()
-    const[imageurl3, setimageurl3]=useState()
+export function Addroom() {
+    const [loading, setLoading] = useState(false);
+    const [error, setError] = useState('');
+    const [name, setName] = useState('');
+    const [rentPerDay, setRentPerDay] = useState('');
+    const [maxCount, setMaxCount] = useState('');
+    const [description, setDescription] = useState('');
+    const [phoneNumber, setPhoneNumber] = useState('');
+    const [type, setType] = useState('');
+    const [imageUrl1, setImageUrl1] = useState('');
+    const [imageUrl2, setImageUrl2] = useState('');
+    const [imageUrl3, setImageUrl3] = useState('');
 
-    async function addRoom(){
-        const newroom={
-            name,
-            rentperday,
-            maxcount,
-            description,
-            phonenumber,
-            type,
-            imageurls:[imageurl1,imageurl2,imageurl3]
+    const validateForm = () => {
+        if (!name || !rentPerDay || !maxCount || !description || !phoneNumber || !type || !imageUrl1) {
+            setError('Please fill in all required fields.');
+            return false;
         }
+        if (isNaN(rentPerDay) || isNaN(maxCount)) {
+            setError('Rent per day and max count must be numbers.');
+            return false;
+        }
+        // Add more specific validation rules as needed
+        setError('');
+        return true;
+    };
+
+    async function addRoom() {
+        if (!validateForm()) return;
+
+        const newRoom = {
+            name,
+            rentPerDay,
+            maxCount,
+            description,
+            phoneNumber,
+            type,
+            imageUrls: [imageUrl1, imageUrl2, imageUrl3],
+        };
+
         try {
-            setLoading(true)
-            const result =await(await axios.post("/api/rooms/addroom", newroom)).data
-            console.log(result)
-            setLoading(false)
-            Swal.fire('Congrats', 'Your New Room Added Successfully ','success').then(result=>{
-                window.location.href='/home'
-            })
-            }
-        catch (error) {
-            console.log(error)
-            setLoading(false)
-            Swal.fire('OOps', 'Something went wrong', 'error')
-            
+            setLoading(true);
+            const result = await (await axios.post('/api/rooms/addroom', newRoom)).data;
+            console.log(result);
+            setLoading(false);
+            Swal.fire('Congrats', 'Your New Room Added Successfully', 'success').then(() => {
+                window.location.href = '/home';
+            });
+        } catch (error) {
+            console.log(error);
+            setLoading(false);
+            Swal.fire('Oops', 'Something went wrong', 'error');
         }
     }
+
     return (
         <div className="row">
             <div className="col-md-5">
-                <input type='text' className="form-control" placeholder="room name" 
-                value={name} onChange={(e)=>{setname(e.target.value)}}
+                <input
+                    type="text"
+                    className="form-control"
+                    placeholder="Room Name"
+                    value={name}
+                    onChange={(e) => setName(e.target.value)}
                 />
-                <input type='text' className="form-control" placeholder="rent per day"
-                value={rentperday} onChange={(e)=>{setrentperday(e.target.value)}}
-                 />
-                <input type='text' className="form-control" placeholder="max count" 
-                value={maxcount} onChange={(e)=>{setmaxcount(e.target.value)}}
+                <input
+                    type="text"
+                    className="form-control"
+                    placeholder="Rent Per Day"
+                    value={rentPerDay}
+                    onChange={(e) => setRentPerDay(e.target.value)}
                 />
-                <input type='text' className="form-control" placeholder="description" 
-                value={description} onChange={(e)=>{setdescription(e.target.value)}}
+                <input
+                    type="text"
+                    className="form-control"
+                    placeholder="Max Count"
+                    value={maxCount}
+                    onChange={(e) => setMaxCount(e.target.value)}
                 />
-                <input type='text' className="form-control" placeholder="phone number" 
-                value={phonenumber} onChange={(e)=>{setphonenumber(e.target.value)}}
+                <input
+                    type="text"
+                    className="form-control"
+                    placeholder="Description"
+                    value={description}
+                    onChange={(e) => setDescription(e.target.value)}
                 />
-
-
-
+                <input
+                    type="text"
+                    className="form-control"
+                    placeholder="Phone Number"
+                    value={phoneNumber}
+                    onChange={(e) => setPhoneNumber(e.target.value)}
+                />
             </div>
             <div className="col-md-5">
-            <input type='text' className="form-control" placeholder="type" 
-            value={type} onChange={(e)=>{settype(e.target.value)}}
-           />
-                <input type='text' className="form-control" placeholder="Image URL 1" 
-                value={imageurl1} onChange={(e)=>{setimageurl1(e.target.value)}}
-
+                <input
+                    type="text"
+                    className="form-control"
+                    placeholder="Type"
+                    value={type}
+                    onChange={(e) => setType(e.target.value)}
                 />
-                <input type='text' className="form-control" placeholder="Image URL 2" 
-                value={imageurl2} onChange={(e)=>{setimageurl2(e.target.value)}}
+                <input
+                    type="text"
+                    className="form-control"
+                    placeholder="Image URL 1"
+                    value={imageUrl1}
+                    onChange={(e) => setImageUrl1(e.target.value)}
                 />
-                <input type='text' className="form-control" placeholder="Image URL 3" 
-                value={imageurl3} onChange={(e)=>{setimageurl3(e.target.value)}}
-
+                <input
+                    type="text"
+                    className="form-control"
+                    placeholder="Image URL 2"
+                    value={imageUrl2}
+                    onChange={(e) => setImageUrl2(e.target.value)}
                 />
+                <input
+                    type="text"
+                    className="form-control"
+                    placeholder="Image URL 3"
+                    value={imageUrl3}
+                    onChange={(e) => setImageUrl3(e.target.value)}
+                />
+                {error && <div className="text-danger">{error}</div>}
                 <div className="text-right">
-                    <button className="btn btn-primary mt-2" onClick={addRoom}>Add Room</button>
-                    </div>    
-
+                    <button className="btn btn-primary mt-2" onClick={addRoom} disabled={loading}>
+                        {loading ? 'Adding...' : 'Add Room'}
+                    </button>
+                </div>
             </div>
-
         </div>
-    )
+    );
 }

@@ -68,3 +68,12 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+###`Expected package to install ` 
+
+
+### Frontend dependencies
+npm install react react-dom react-bootstrap react-router-dom react-stripe-checkout react-spinners aos antd moment sweetalert2 axios
+
+### Backend dependencies
+npm install express mongoose nodemailer stripe dotenv
