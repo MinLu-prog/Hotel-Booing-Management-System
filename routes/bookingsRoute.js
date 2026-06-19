@@ -3,7 +3,7 @@ const router = express.Router();
 const Booking = require("../models/booking");
 const Room = require("../models/room");
 const moment = require('moment');
-const stripe = require('stripe')('sk_test_51Ps6A1H6f7IOyMyV30gPHEypgm0iDd7YqKlmADllcGIPa960Tchttxt1jJ04fMVsBf3DPQQcOvbSvIjTd1jQmZZz008O53sS5h');
+const stripe = require('stripe')(process.env.STRIPE_SECRET_KEY);
 const { v4: uuidv4 } = require('uuid');
 const nodemailer = require('nodemailer');
 require('dotenv').config();  // Ensure you load environment variables

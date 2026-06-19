@@ -14,26 +14,28 @@ router.post('/register', async(req, res)=>{
     }
 });
 router.post("/login", async(req, res)=>{
-    const {email, password}=req.body
-    
+    const email = req.body.email?.trim().toLowerCase();
+    const password = req.body.password;
+
+    if (!email || !password) {
+        return res.status(400).json({ message: 'Email and password are required' });
+    }
+
     try{
-        const user =await User.findOne({email: email, password:password})
+        const user = await User.findOne({ email, password });
         if(user){
             const temp = {
                 name: user.name,
-                email:user.email,
-                isAdmin :user.isAdmin,
-                _id:user._id,
-
+                email: user.email,
+                isAdmin : user.isAdmin,
+                _id: user._id,
             }
-            res.send(temp)
-        }
-        else{
-            return res.status(400).json({ message: 'Login Failed'})
+            return res.send(temp);
         }
 
+        return res.status(400).json({ message: 'Invalid credentials' });
     }catch(error){
-        return res.status(400).json({error});
+        return res.status(500).json({ message: error.message || 'Login failed' });
     }
 });
 
